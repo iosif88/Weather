@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1227E7A129E9EFAD0028EEE0 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227E7A029E9EFAD0028EEE0 /* JSONDecoder.swift */; };
+		1227E7A329E9F0230028EEE0 /* ViewController+alertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1227E7A229E9F0230028EEE0 /* ViewController+alertController.swift */; };
 		12708D7729E34A780004DD00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12708D7629E34A780004DD00 /* AppDelegate.swift */; };
 		12708D7929E34A780004DD00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12708D7829E34A780004DD00 /* SceneDelegate.swift */; };
 		12708D7B29E34A780004DD00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12708D7A29E34A780004DD00 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1227E7A029E9EFAD0028EEE0 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		1227E7A229E9F0230028EEE0 /* ViewController+alertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+alertController.swift"; sourceTree = "<group>"; };
 		12708D7329E34A780004DD00 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12708D7629E34A780004DD00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12708D7829E34A780004DD00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,15 +60,25 @@
 		12708D7529E34A780004DD00 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				12708D8A29E35F710004DD00 /* Extentions */,
 				12708D7629E34A780004DD00 /* AppDelegate.swift */,
 				12708D7829E34A780004DD00 /* SceneDelegate.swift */,
 				12708D7A29E34A780004DD00 /* ViewController.swift */,
+				1227E7A029E9EFAD0028EEE0 /* JSONDecoder.swift */,
 				12708D7C29E34A780004DD00 /* Main.storyboard */,
 				12708D7F29E34A7F0004DD00 /* Assets.xcassets */,
 				12708D8129E34A7F0004DD00 /* LaunchScreen.storyboard */,
 				12708D8429E34A7F0004DD00 /* Info.plist */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		12708D8A29E35F710004DD00 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				1227E7A229E9F0230028EEE0 /* ViewController+alertController.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				12708D7B29E34A780004DD00 /* ViewController.swift in Sources */,
+				1227E7A129E9EFAD0028EEE0 /* JSONDecoder.swift in Sources */,
+				1227E7A329E9F0230028EEE0 /* ViewController+alertController.swift in Sources */,
 				12708D7729E34A780004DD00 /* AppDelegate.swift in Sources */,
 				12708D7929E34A780004DD00 /* SceneDelegate.swift in Sources */,
 			);
@@ -290,11 +306,13 @@
 				DEVELOPMENT_TEAM = 5K6WD7RW63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This application will allow you to find out the weather forecast in the place where you are. He needs access to the GPS coordinates of your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +336,13 @@
 				DEVELOPMENT_TEAM = 5K6WD7RW63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This application will allow you to find out the weather forecast in the place where you are. He needs access to the GPS coordinates of your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
